@@ -7,17 +7,9 @@
 </head>
 <body>
         <div class="mainContainer">
-            <span><img src="Logo.jpg" alt="ChannelLogo" class="logo" width="100vh" height="auto"></span>
+            <span><img src="Logo.jpg" alt="ChannelLogo" class="logo" width="100px" height="auto"></span>
             <span><h2>Welcome to our Black_Hole Channel</h2></span>
         </div>
-   <!-- <div>
-        <p>Password Version ရှာရန်</p>
-        <input type="" id="user" placeholder="Enter your zip name" required>
-        <button id="search" onclick="searcher()">Search</button>
-    </div>
-    <div>
-        <p id="password"></p>
-    </div>-->
     <div>
         <p class="title">Free file list & password</p>
         <ul>
@@ -26,31 +18,19 @@
 
             <li><a href="https://t.me/black_holefree/265">V4.GL-64 Bit [Recoil-70].zip</a></li>
             <button class="showpassword" onclick="password1()">Get password</button>
+
+            <li><a href="https://t.me/black_holefree/281">Black_Hole Root & No Root.zip</a></li>
+            <button class="showpassword" onclick="password2()">Get password</button>
         </ul>
     </div>
     <p id="demo"></p>
     <script>
-       /* const usersearch = document.getElementById('user');
-        const zippass = document.getElementById('password');
-        const text = "File password : "
-        const fileName = {
-            v1 : "maswalker", 
-            v2 : "JJ",
-        }
-        function searcher() {
-            if (usersearch.value == "V1" ){
-                zippass.innerHTML = text + fileName.v1;
-            }else if (usersearch.value == "V2"){
-                zippass.innerHTML = text + fileName.v2;
-            }else {
-                alert("Someting worng try agin");
-            }
-                
-        }; */
         const freefile = {
             v1 : "Share",
-            v2 : "1100"
+            v2 : "1100",
+            v3 : "share3"
         }
+
         const text = document.getElementById('demo');
         const title = "Password : " + "<b>"
         function password() {
@@ -59,6 +39,10 @@
 
         function password1() {
             text.innerHTML = title + freefile.v2;
+        };
+
+        function password2 () {
+            text.innerHTML = title + freefile.v3;
         }
        
     </script>
