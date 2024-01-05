@@ -17,3 +17,32 @@ li {
 .logo {
     border-radius: 20px;
 }
+
+.number {
+    width: 100px;
+    height: 30px;
+    padding-left: 15px;
+    border-radius: 50px;
+    border-color: antiquewhite;
+    outline: none;
+    border: 1px solid;
+    margin-right: 10px;
+}
+
+.click {
+    width: 100px;
+    height: 30px;
+    border: 1px solid;
+    border-color: red;
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+    outline: none;
+}
+body {
+    background-color: #aaaa;
+}
+
+.mainContainer {
+    margin-left: 2vh;
+}

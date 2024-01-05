@@ -12,38 +12,40 @@
         </div>
     <div>
         <p class="title">Free file list & password</p>
-        <ul>
+
+        <div>
+            <input type="number" id="number" class="number">
+            <button onclick="getpass()" class="click" id="click">Get Password</button>
+        </div>
+        <div>
+            <p id="pass"></p>
+        </div>
+        <ol>
             <li><a href="https://t.me/black_holefree/241">ModdateBlackHole_1.zip</a></li>
-            <button class="showpassword" onclick="password()">Get password</button>
+            
 
             <li><a href="https://t.me/black_holefree/265">V4.GL-64 Bit [Recoil-70].zip</a></li>
-            <button class="showpassword" onclick="password1()">Get password</button>
+            
 
             <li><a href="https://t.me/black_holefree/281">Black_Hole Root & No Root.zip</a></li>
-            <button class="showpassword" onclick="password2()">Get password</button>
-        </ul>
+        </ol>
     </div>
     <p id="demo"></p>
     <script>
-        const freefile = {
-            v1 : "Share",
-            v2 : "1100",
-            v3 : "share3"
+        let passwordArr = ["Share", "1100", "share3"];
+        const getNum = document.getElementById('number');
+        const showPass = document.getElementById('pass');
+        const buttonTag = document.getElementById('click');
+        
+
+        
+
+        function getpass() {
+            let i = getNum.value - 1;
+            showPass.innerHTML = "Password : " + "<b>" + passwordArr[i];
         }
 
-        const text = document.getElementById('demo');
-        const title = "Password : " + "<b>"
-        function password() {
-            text.innerHTML = title + freefile.v1;
-        };
 
-        function password1() {
-            text.innerHTML = title + freefile.v2;
-        };
-
-        function password2 () {
-            text.innerHTML = title + freefile.v3;
-        }
        
     </script>
 </body>
