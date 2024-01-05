@@ -12,7 +12,30 @@
     </style>
     <h1> ဘာလို့ဝင်ကြည့်တာလဲ </h1>
     <div>
-        <img src="PUBG.png" alt="PUBG photo" width="500vh" height="1000vh" class="photo">
+        <p>Password Version ရှာရန်</p>
+        <input type="" id="user" placeholder="Enter your zip name">
+        <button id="search" onclick="searcher()">Search</button>
     </div>
+    <div>
+        <p id="password"></p>
+    </div>
+
+    <script>
+        const usersearch = document.getElementById('user');
+        const zippass = document.getElementById('password');
+        const fileName = {
+            v1 : "maswalker", 
+            v2 : "JJ",
+        }
+        function searcher() {
+            if (usersearch.value == "V1" ){
+                zippass.innerHTML = "File password : " + fileName.v1;
+            }else {
+                alert("Wrong please try again");
+            }
+        };
+
+       
+    </script>
 </body>
 </html>
