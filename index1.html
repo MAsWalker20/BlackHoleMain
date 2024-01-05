@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <h1> ဘာရှာလဲဘာလိုလဲ  </h1>
+        <div class="mainContainer">
+            <span><img src="Logo.jpg" alt="ChannelLogo" class="logo" width="100vh" height="auto"></span>
+            <span><h2>Welcome to our Black_Hole Channel</h2></span>
+        </div>
    <!-- <div>
         <p>Password Version ရှာရန်</p>
         <input type="" id="user" placeholder="Enter your zip name" required>
@@ -16,9 +19,13 @@
         <p id="password"></p>
     </div>-->
     <div>
+        <p class="title">Free file list & password</p>
         <ul>
             <li><a href="https://t.me/black_holefree/241">ModdateBlackHole_1.zip</a></li>
             <button class="showpassword" onclick="password()">Get password</button>
+
+            <li><a href="https://t.me/black_holefree/265">V4.GL-64 Bit [Recoil-70].zip</a></li>
+            <button class="showpassword" onclick="password1()">Get password</button>
         </ul>
     </div>
     <p id="demo"></p>
@@ -41,12 +48,18 @@
                 
         }; */
         const freefile = {
-            v1 : "Share"
+            v1 : "Share",
+            v2 : "1100"
         }
         const text = document.getElementById('demo');
+        const title = "Password : " + "<b>"
         function password() {
-            text.innerHTML = "Password : " + freefile.v1;
+            text.innerHTML = title + freefile.v1;
         };
+
+        function password1() {
+            text.innerHTML = title + freefile.v2;
+        }
        
     </script>
 </body>

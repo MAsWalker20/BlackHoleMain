@@ -5,3 +5,15 @@
 a {
     text-decoration: none;
 }
+li {
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 4vh;
+    margin-left: 10px;
+}
+
+.logo {
+    border-radius: 20px;
+}
