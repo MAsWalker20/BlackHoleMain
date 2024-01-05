@@ -2,22 +2,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Free Files</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    </style>
     <h1> ဘာရှာလဲဘာလိုလဲ  </h1>
-    <div>
+   <!-- <div>
         <p>Password Version ရှာရန်</p>
         <input type="" id="user" placeholder="Enter your zip name" required>
         <button id="search" onclick="searcher()">Search</button>
     </div>
     <div>
         <p id="password"></p>
+    </div>-->
+    <div>
+        <ul>
+            <li><a href="https://t.me/black_holefree/252">Wallhack2 fixed_64.zip</a></li>
+            <button class="showpassword" onclick="password()">Get password</button>
+        </ul>
     </div>
-
+    <p id="demo"></p>
     <script>
-        const usersearch = document.getElementById('user');
+       /* const usersearch = document.getElementById('user');
         const zippass = document.getElementById('password');
         const text = "File password : "
         const fileName = {
@@ -33,8 +39,14 @@
                 alert("Someting worng try agin");
             }
                 
+        }; */
+        const freefile = {
+            v1 : "maswalker"
+        }
+        const text = document.getElementById('demo');
+        function password() {
+            text.innerHTML = "Password : " + freefile.v1;
         };
-
        
     </script>
 </body>
