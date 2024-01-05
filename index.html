@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <body>
+    <div class="dateContainer">
+        <h3 id="date" class="clock"></h3>
+    </div>
     <div class="imageContainer">
         <img src="Logo.jpg" alt="ChannelLogo" class="image">
     </div>
@@ -16,12 +19,13 @@
                 <h3>Login</h3>
             </label>
             <div class="password">
-                <input type="password" class="inputPassword" placeholder="Enter password">
-            </div>
-            <div>
-                <button class="loginButton">Login</button>
+                <input type="text" class="inputPassword Username"  placeholder="Enter username" id="username"><br>
+                <input type="password" class="inputPassword"  placeholder="Enter password" >
             </div>
         </form>
+        <div>
+            <button class="loginButton" id="password" onclick="clicker()">Login</button>
+        </div>
         <div>
             <a href="index1.html"><button class="free">Get free key</button></a>
         </div>
@@ -39,6 +43,18 @@
         <p>Thanks for being Vip and None Vip users</p>
         <p>Vip ဝင်ပေးကြတဲ့သူတေရော free သုံးတဲ့သူတေများကိုအထူးကျေးဇူးတင်ကြောင်း</p>
     </div>
+    
+
+    <script>
+        const date = new Date()
+        
+
+        const month = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        let MonthName = month[date.getMonth()];
+
+        document.getElementById('date').innerHTML = date.getDay() + " / " + MonthName + " / " + date.getFullYear() + "<br>" + date.getHours() + ":" + date.getMinutes();
+
+    </script>
     
 </body>
 </html>

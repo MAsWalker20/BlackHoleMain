@@ -72,3 +72,18 @@ body {
 .paraContainer {
     margin: 10vh;
 }
+
+.Username {
+    margin-bottom: 1vh;
+}
+
+.dateContainer {
+    display: flex;
+    justify-content: end;
+    margin-right: 5vh;
+}
+
+.clock {
+    color: white;
+    
+}
