@@ -13,7 +13,7 @@
     <h1> ဘာလို့ဝင်ကြည့်တာလဲ </h1>
     <div>
         <p>Password Version ရှာရန်</p>
-        <input type="" id="user" placeholder="Enter your zip name">
+        <input type="" id="user" placeholder="Enter your zip name" required>
         <button id="search" onclick="searcher()">Search</button>
     </div>
     <div>
@@ -23,16 +23,20 @@
     <script>
         const usersearch = document.getElementById('user');
         const zippass = document.getElementById('password');
+        const text = "File password is : "
         const fileName = {
             v1 : "maswalker", 
             v2 : "JJ",
         }
         function searcher() {
             if (usersearch.value == "V1" ){
-                zippass.innerHTML = "File password : " + fileName.v1;
+                zippass.innerHTML = text + fileName.v1;
+            }else if (usersearch.value == "V2"){
+                zippass.innerHTML = text + fileName.v2;
             }else {
-                alert("Wrong please try again");
+                alert("Someting worng try agin");
             }
+                
         };
 
        
