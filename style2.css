@@ -46,3 +46,7 @@ body {
 .mainContainer {
     margin-left: 2vh;
 }
+
+.version {
+    margin-left: 20px;
+}
