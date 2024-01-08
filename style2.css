@@ -14,6 +14,9 @@ li {
     margin-left: 10px;
 }
 
+.welcome {
+    font-style: italic;
+}
 .logo {
     border-radius: 20px;
 }
