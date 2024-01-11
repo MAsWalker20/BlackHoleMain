@@ -25,9 +25,21 @@
             <li><a href="https://t.me/black_holefree/241">ModdateBlackHole_1.zip</a></li>
             <li><a href="https://t.me/black_holefree/265">V4.GL-64 Bit [Recoil-70].zip</a></li>
             <li><a href="https://t.me/black_holefree/281">Black_Hole Root & No Root.zip</a></li>
-            <li><a href="https://t.me/black_holefree/336">GL_64bitST_2_BlackHole_VipObb</a></li>
-            <li><a href="https://t.me/black_holefree/386">[NoGress NoTree NoWater] Sanhok map</a></li>
-            <li><a href="https://t.me/black_holefree/424">BlckHole_Conqueror_Conifg_Modata V2 </a></li>
+            <li><a href="https://t.me/black_holefree/336">GL_64bitST_2_BlackHole_VipObb.zip</a></li>
+            <li><a href="https://t.me/black_holefree/386">[NoGress NoTree NoWater] Sanhok map.zip</a></li>
+            <li><a href="https://t.me/black_holefree/424">BlckHole_Conqueror_Conifg_Modata V2.zip</a></li>
+        </ol> <br>
+        
+        <h2 class="version">3.0 Version</h2>
+        <div>
+            <input type="number" id="v2num" class="number">
+            <button onclick="version2()" class="click" id="click">Get Password</button>
+        </div>
+        <div>
+            <p id="v2pass"></p>
+        </div>
+        <ol>
+            <li><a href="https://t.me/black_holefree/445">NoRecoil OBB(2).zip</a></li>
         </ol>
     </div>
     <p id="demo"></p>
@@ -42,6 +54,15 @@
         function getpass() {
             let i = getNum.value - 1;
             showPass.innerHTML = "Password : " + "<b>" + passwordArr[i];
+        }
+
+        let v2PassArr = ["9900", "I love you"];
+        const newpass = document.getElementById('v2pass');
+        const newNum = document.getElementById('v2num');
+
+        function version2() {
+            let i = newNum.value - 1;
+            newpass.innerHTML = "Password : " + "<b>" + v2PassArr[i];
         }
 
 
